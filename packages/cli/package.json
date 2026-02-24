@@ -1,0 +1,23 @@
+{
+  "name": "@motosan-dev/cli",
+  "version": "0.0.0",
+  "description": "Unified CLI for media-toolkit",
+  "type": "module",
+  "bin": {
+    "mtk": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm",
+    "dev": "tsup src/index.ts --format esm --watch"
+  },
+  "dependencies": {
+    "@motosan-dev/core": "workspace:*",
+    "@motosan-dev/subtitle": "workspace:*",
+    "@motosan-dev/downloader": "workspace:*",
+    "@motosan-dev/audio": "workspace:*",
+    "@motosan-dev/metadata": "workspace:*",
+    "commander": "^13.0.0"
+  },
+  "files": ["dist"],
+  "license": "MIT"
+}

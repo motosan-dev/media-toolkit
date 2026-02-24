@@ -1,0 +1,17 @@
+{
+  "name": "@motosan-dev/audio",
+  "version": "0.0.1",
+  "description": "Audio extraction from video URLs — agent-friendly, pipe-safe",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch"
+  },
+  "dependencies": { "@motosan-dev/core": "workspace:*" },
+  "license": "MIT"
+}
